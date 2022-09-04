@@ -9,15 +9,25 @@
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev"
   },
-  "keywords": [],
+  "repository:": {
+    "type": "git",
+    "url": "https://github.com/HeartSleeves/ILW19TextEditor.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeartSleeves/ILW19TextEditor/issues"
+  },
+  "homepage": "https://github.com/HeartSleeves/ILW19TextEditor#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0"
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.19",
+    "webpack": "^5.74.0"
   }
 }
